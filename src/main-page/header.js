@@ -1,4 +1,5 @@
 import logo from './GloboLogo.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Header = ({ subtitle }) => (
