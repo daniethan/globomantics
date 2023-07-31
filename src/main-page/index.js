@@ -20,14 +20,8 @@ function App() {
           <Header />
           <HouseFilter />
           <Routes>
-            <Route
-              path="/house/:id"
-              element={<HouseFromQuery />}
-            />
-            <Route
-              path="searchresults/:country"
-              element={<SearchResults />}
-            />
+            <Route path="/house/:id" element={<HouseFromQuery />} />
+            <Route path="searchresults/:country" element={<SearchResults />} />
             <Route path="/" element={<FeaturedHouse house={featuredHouse} />} />
           </Routes>
         </div>

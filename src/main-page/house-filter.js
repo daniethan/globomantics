@@ -14,7 +14,7 @@ const HouseFilter = () => {
     //determine the country selected by extracting the current value
     const country = e.target.value;
     //instruct the router to display the search results page.
-    navigate(`/searchresults/${country}`);
+    !country ? navigate("/") : navigate(`/searchresults/${country}`);
   };
 
   return (
